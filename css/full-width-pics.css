@@ -29,6 +29,12 @@ h1, .navbar-brand {
   font-family: 'Marcellus SC', serif;
 }
 
+@media screen and (max-width: 1280px) {
+  h1, h2, p {
+    text-align: center;
+  }
+  }
+
 .navbar {
   background-color: rgb(26,26,26) !important;
 }
@@ -37,6 +43,23 @@ h1, .navbar-brand {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .container-flex {
+    flex-direction: column;  
+    align-items: center;
+  }
+  .reduced-image-responsive {
+    width:80% !important;
+  }
+  .centered-responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
 }
 
 .vertical {
@@ -69,6 +92,12 @@ blockquote{
     box-shadow: 2px 2px 2px 2px #E0E0E0;
 }
 
+@media screen and (max-width: 1280px) {
+  .quote-box {
+    width:90%;
+  }
+}
+
 .quote-box:hover,
 .quote-box:focus {
   /*box-shadow: 0 0.5em 0.5em -0.4em var(--hover);*/
@@ -82,6 +111,10 @@ blockquote{
     color:white;
     font-family: "Times New Roman", Georgia, Serif;
     margin-bottom: -2rem !important;    
+}
+
+.quote-text {
+  font-size:1.3em;
 }
 
 
