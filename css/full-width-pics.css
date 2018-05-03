@@ -4,8 +4,11 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-width-pics/blob/master/LICENSE)
  */
 
+@import url('https://fonts.googleapis.com/css?family=Lato|Marcellus+SC&subset=latin-ext');
+
 body {
   padding-top: 54px;
+  font-family: 'Lato', sans-serif;
 }
 
 @media (min-width: 992px) {
@@ -21,3 +24,64 @@ body {
   background-size: cover;
   -o-background-size: cover;
 }
+
+h1, .navbar-brand {
+  font-family: 'Marcellus SC', serif;
+}
+
+.navbar {
+  background-color: rgb(26,26,26) !important;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+section {
+  border-top: solid 1px lightgrey;
+}
+
+.link:hover, .link:focus {
+  cursor: pointer;
+} 
+
+blockquote{
+    border-left:none
+}
+
+.quote-badge{
+    background-color: rgba(0, 0, 0, 0.2);   
+}
+
+.quote-box{
+    overflow: hidden;
+    border-radius: 17px;
+    background: linear-gradient(to right,rgb(251,117,186), rgb(253,197,187)); ;
+    margin-top: 25px;
+    color:white;
+    width: 60%;
+    box-shadow: 2px 2px 2px 2px #E0E0E0;
+}
+
+.quote-box:hover,
+.quote-box:focus {
+  /*box-shadow: 0 0.5em 0.5em -0.4em var(--hover);*/
+  box-shadow: 3px 3px 3px 3px #E0E0E0;
+  transform: translateY(-0.25em);
+}
+
+.quotation-mark {
+    font-weight: bold;
+    font-size:100px;
+    color:white;
+    font-family: "Times New Roman", Georgia, Serif;
+    margin-bottom: -2rem !important;    
+}
+
+
